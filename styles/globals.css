@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@theme {
+  /* Design System - The Savannah Grace Foundation */
+  
+  /* Primary Colors */
+  --color-primary-50: #e6f2ff;
+  --color-primary-100: #cce5ff;
+  --color-primary-200: #99cbff;
+  --color-primary-300: #66b1ff;
+  --color-primary-400: #3397ff;
+  --color-primary-500: #116dff; /* Main brand blue */
+  --color-primary-600: #0e57cc;
+  --color-primary-700: #0a4199;
+  --color-primary-800: #072c66;
+  --color-primary-900: #031633;
+  
+  /* Secondary Colors */
+  --color-secondary-50: #eff5ff;
+  --color-secondary-100: #dfeaff;
+  --color-secondary-200: #bfd6ff;
+  --color-secondary-300: #9fc1ff;
+  --color-secondary-400: #7facff;
+  --color-secondary-500: #5e97ff; /* Accent blue */
+  --color-secondary-600: #4b79cc;
+  --color-secondary-700: #385b99;
+  --color-secondary-800: #263c66;
+  --color-secondary-900: #131e33;
+  
+  /* Tertiary Colors */
+  --color-tertiary-50: #f0fbff;
+  --color-tertiary-100: #e1f7ff;
+  --color-tertiary-200: #c3efff;
+  --color-tertiary-300: #a5e7ff;
+  --color-tertiary-400: #87dfff;
+  --color-tertiary-500: #bde9fb; /* Sky blue */
+  --color-tertiary-600: #97bacc;
+  --color-tertiary-700: #718c99;
+  --color-tertiary-800: #4c5d66;
+  --color-tertiary-900: #262f33;
+  
+  /* Neutral Colors */
+  --color-neutral-50: #f9fafb;
+  --color-neutral-100: #f3f4f6;
+  --color-neutral-200: #e5e7eb;
+  --color-neutral-300: #d1d5db;
+  --color-neutral-400: #9ca3af;
+  --color-neutral-500: #6b7280;
+  --color-neutral-600: #4b5563;
+  --color-neutral-700: #374151;
+  --color-neutral-800: #1f2937;
+  --color-neutral-900: #111827;
+  
+  /* Semantic Colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+  
+  /* Spacing Scale */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 6rem;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 20px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-white text-neutral-900;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+  }
+  
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  
+  h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+  
+  .small {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}
